@@ -1,0 +1,30 @@
+<h3>User Form</h3>
+<div class="formContainer">
+  <div class="name">
+    <input type="text"
+           placeholder="Name"
+           name="name"
+           [(ngModel)]="firstName">
+  </div>
+
+  <!-- <div class="address">
+    <input type="text"
+           placeholder="Address"
+           name="address"
+           [(ngModel)]="address">
+  </div> -->
+
+  <div class="email">
+    <input type="text"
+           placeholder="Email"
+           name="email"
+           [(ngModel)]="email">
+  </div>
+  <div class="genderContainer">
+    <div class="male" (click)="male()" [ngStyle]="{'backgroundColor': btnClickedMale ? '#0543a5': '#dddddd'}">M</div>
+    <div class="female" (click)="female()" [ngStyle]="{'backgroundColor': btnClickedFemale ? '#0543a5': '#dddddd'}">F</div>
+  </div>
+  <div class="btnContainer">
+    <button class="submitBtn" (click)="submitBtn()">Submit</button>
+  </div>
+</div>
